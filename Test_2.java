@@ -22,7 +22,6 @@ public class Test_2 {
         SummaAge summ = ()-> cat1.getAge() + own1.getAgeOwner(); //Определяем общий возраст кота и хозяина м помощью собственного функционального интерфейса SummaAge
         System.out.println("Общий возраст кота и хозяина: " + summ.getSummaAge() + " год(лет)");
 
-
         List<String> namesCat = new ArrayList<>(); //Создаем список имен животных по алфавиту
          namesCat.add(cat1.getName());
          namesCat.add(cat2.getName());
