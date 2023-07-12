@@ -1,36 +1,45 @@
-public class Owner_1 implements Interface_1{
-    private String name;
+public class Owner implements Interface_City{
+    private String nameOwner;
+    private int ageOwner;
 
     public void setName (String name){
-        this.name = name;
+        this.nameOwner = name;
+    }
+
+    public void setAge (int age){
+        this.ageOwner = age;
     }
 
     public String getName() {
-        return name;
+        return nameOwner;
+    }
+
+    public int getAgeOwner() {
+        return ageOwner;
     }
 
     @Override
-    public void City(){
+    public void city(){
         System.out.println("Ярославль");
     }
 
     @Override
-    public void Color(){
+    public void color(){
         System.out.println("Белый");
     }
 
     @Override
-    public void PlaceBorn(){
+    public void placeBorn(){
         System.out.println("Тундра");
     }
 
     @Override
-    public void Tail(){
+    public void tail(){
         System.out.println("У меня нет хвоста");
     }
 
     @Override
-    public void AbilityToSpeak(){
+    public void abilityToSpeak(){
         System.out.println("Я умею говорить!");
     }
 

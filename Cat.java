@@ -1,4 +1,4 @@
-public class Cat_1 implements Interface_1{
+public class Cat implements Interface_City{
     private String name;
     private int age;
     private String ownerName;
@@ -33,27 +33,27 @@ public class Cat_1 implements Interface_1{
 
 
     @Override
-    public void City(){
+    public void city(){
         System.out.println("Я бездомный");
     }
 
     @Override
-    public void Color(){
+    public void color(){
         System.out.println("Черный");
     }
 
     @Override
-    public void PlaceBorn(){
+    public void placeBorn(){
         System.out.println("Я не помню");
     }
 
     @Override
-    public void Tail(){
+    public void tail(){
         System.out.println("У меня длинный хвост");
     }
 
     @Override
-    public void AbilityToSpeak(){
+    public void abilityToSpeak(){
         System.out.println("Я только мяукаю");
     }
 

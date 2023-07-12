@@ -14,65 +14,62 @@
 public class Test implements Interface_IConst {
 
     public static void main(String[] args) {
-        Cat_1 cat1 = new Cat_1();
+        Cat cat1 = new Cat();
         cat1.setName("Мурзик");
         cat1.setAge(3);
 
-        Owner_1 owner = new Owner_1();
+        Owner owner = new Owner();
         owner.setName("Олег");
         cat1.setOwnerName(owner.getName());
-        // cat1.Greet();
 
-        System.out.println("Из какого ты города?");//Интерфейс 1
+
+        System.out.println("Из какого ты города?");//Interface_City
         System.out.print("Кот: ");
-        cat1.City();
+        cat1.city();
         System.out.print("Человек: ");    
-        owner.City();
+        owner.city();
 
         System.out.println();
 
-        System.out.println("Какого ты цвета?");//Интерфейс 2
+        System.out.println("Какого ты цвета?");//Interface_Color
         System.out.print("Кот: ");
-        cat1.Color();
+        cat1.color();
         System.out.print("Человек: ");
-        owner.Color();
+        owner.color();
 
         System.out.println();
 
-        System.out.println("Где ты родился?"); //Интерфейс 3
+        System.out.println("Где ты родился?"); //Interface_PlaceBorn
         System.out.print("Кот: ");
-        cat1.PlaceBorn();
+        cat1.placeBorn();
         System.out.print("Человек: ");
-        owner.PlaceBorn();
+        owner.placeBorn();
 
         System.out.println();
 
-        System.out.println("У тебя есть хвост?");//Интерфейс 4
+        System.out.println("У тебя есть хвост?");//Interface_Tail
         System.out.print("Кот: ");
-        cat1.Tail();
+        cat1.tail();
         System.out.print("Человек: ");
-        owner.Tail();
+        owner.tail();
 
         System.out.println();
 
-        System.out.println("Умеешь говорить?");//Интерфейс 5
+        System.out.println("Умеешь говорить?");//Interface_AbilityToSpeak
         System.out.print("Кот: ");
-        cat1.AbilityToSpeak();
+        cat1.abilityToSpeak();
         System.out.print("Человек: ");
-        owner.AbilityToSpeak();
+        owner.abilityToSpeak();
 
         System.out.println();
 
         System.out.println("В каком году тебя опросили?");//Интерфейс 1 (год опроса)
-        System.out.print("Кот: " + YEAR);
-        System.out.println();
-        System.out.print("Человек: " + YEAR);
-
-        System.out.println();
+        System.out.println("Кот: " + YEAR);
+        System.out.println("Человек: " + YEAR);
         System.out.println();
         
-        Cat_1 obj1 = new Cat_1();       //Default-методы
-        Owner_1 obj2 = new Owner_1();
+        Cat obj1 = new Cat();       //Default-методы
+        Owner obj2 = new Owner();
 
 
         System.out.println("Что делаешь?");

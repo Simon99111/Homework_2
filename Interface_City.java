@@ -1,6 +1,6 @@
-public interface Interface_1 extends Interface_2{
+public interface Interface_City extends Interface_Color{
     int year = 5;
-    public void City(); //Город 
+    public void city(); //Город 
     
     default String sleep(){     //default-метод
         return ("Я сплю!");
